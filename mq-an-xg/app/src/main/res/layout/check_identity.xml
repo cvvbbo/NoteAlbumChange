@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDEDEB"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:background="#3090E6"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ImageView
+        android:id="@+id/no_use"
+       android:layout_centerInParent="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:id="@+id/no_usetext"
+        android:layout_below="@id/no_use"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您尚未通过身份验证"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="只有通过身份验证，才能成为秒签小哥"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/identity"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/no_usetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我要身份验证"/>
+
+
+
+
+
+</RelativeLayout>

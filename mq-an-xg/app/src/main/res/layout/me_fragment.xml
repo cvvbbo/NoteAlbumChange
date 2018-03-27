@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rltext1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/childframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+       android:id="@+id/parentframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rltext2"
+            android:layout_width="match_parent"
+            android:background="@color/gaybackground"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:id="@+id/no_use"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--圆形头像-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/needreplace"
+                    app:civ_border_color="@android:color/transparent"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp" />
+
+                <TextView
+                    android:id="@+id/useinfor"
+                    android:gravity="center"
+                    android:background="@drawable/line_right"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:text="熊 政"
+                    android:layout_width="64dp"
+                    android:layout_height="26dp" />
+            </LinearLayout>
+
+            <!--下面是两个按钮的-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/no_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="0.0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="我的余额"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="0张"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="我的优惠券"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <!--最好不要包括进来，因为还需要点击事件之类的！！-->
+        <!--<include-->
+        <!--layout="@layout/menu_list"></include>-->
+
+        <ListView
+            android:layout_below="@id/rltext2"
+            android:id="@+id/me_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

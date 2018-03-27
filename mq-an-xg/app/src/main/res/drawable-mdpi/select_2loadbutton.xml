@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--点击显示深蓝色-->
+    <item android:state_pressed="true" android:drawable="@drawable/bt_login_press"></item>
+    <item android:drawable="@drawable/bt_login_normal"/>
+
+
+    <!--点击显示浅色-->
+    <!--<item android:state_pressed="false" android:drawable="@drawable/bt_login_press"></item>-->
+    <!--<item android:drawable="@drawable/bt_login_normal"/>-->
+</selector>
